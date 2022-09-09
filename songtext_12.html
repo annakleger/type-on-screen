@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+    <html lang="de">
+<head>  
+<meta charset=“UTF-8“> 
+<meta name="viewport" 
+content="width=device-width, 
+initial-scale=1">
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="style/styles.css">
+<script src="js/js.js" async></script>
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="styles/styles-songtext-1.css">
+<title>Seitentitel</title>
+</head>
+
+<body>
+
+<div class="background">
+    <img src="img/12_back.png" width="100%", height="100%">
+</div>
+            <section>
+                <p class="text">Cuando no estoy te hago falta -
+                    Cuando hacen el amor -
+                    De madrugada -
+                    No sientes nada -
+                    Tu la llevas pa la playa -
+                    Alli la retratas -
+                    Despues me las mandas -
+                    Tu dices que quisiera -
+                    Que fuera yo no ella -
+                    Cuanto me extrañas -
+                    Me esperas en tu cama -
+                    Si llego -
+                    Llego hasta tu casa -
+                    Me juraras -
+                    Llego hasta tu casa -
+                    Si llego -
+                    Llego hasta tu casa -
+                    No digas na' -
+                    Soy la mas mala de la fiesta -
+                    Soy la unica en quien tu piensas -
+                    Cuando de acuestas -
+                    Cuando entro por la puerta -
+                    Todos se dan cuenta -
+                    Cuando tu me vez -
+                    A tu novia no me la presentas -
+                    Mi marido ya no te soporta -
+                    Ve busca otra -
+                    Haces el que no le importa -
+                    Despues me suplicas -
+                    Y quieres que venga -
+                    Si llego -
+                    Llego hasta tu casa -
+                    Me juraras -
+                    Llego hasta tu casa -
+                    Si llego -
+                    Llego hasta tu casa -
+                    No digas na' -
+                    Get up, get up together -
+                    And let your love light shine -
+                    Get up, get up together -
+                    And let your love light shine</p>
+            </section>
+            
+            <script>
+                const text = document.querySelector('.text');
+                text.innerHTML = text.textContent.replace(/\S/g,
+                "<span>$&</span>");
+        
+            const letters = document.querySelectorAll('span'); 
+            for (let i=0; i<letters.length; i++){
+                    letters[i].addEventListener("mouseover", function
+                    (){
+                        letters[i].classList.add('active')
+                    })
+                }
+            
+            </script>
+
+
+
+
+</body>

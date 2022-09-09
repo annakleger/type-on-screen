@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+    <html lang="de">
+<head>  
+<meta charset=“UTF-8“> 
+<meta name="viewport" 
+content="width=device-width, 
+initial-scale=1">
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="style/styles.css">
+<script src="js/js.js" async></script>
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="styles/styles-songtext-1.css">
+<title>Seitentitel</title>
+</head>
+
+<body>
+
+<div class="background">
+    <img src="img/4_back.png" width="100%", height="100%">
+</div>
+            <section>
+                <p class="text">Ooh-ooh, ooh-ah-ah -
+                    Ooh-ah-ah-ooh, ooh-ah-ah -
+                    I caught a fever 'cause I rhyme my rhymes right -
+                    And my doobie wrap's tight -
+                    And my starlight shines bright, bright -
+                    I'm just a lover I don't want to fight -
+                    But you keep putting me in cages -
+                    Every day and night -
+                    It keeps repeating upon me -
+                    Woo, the same old story keeps -
+                    Repeating upon me, me, me, me -
+                    It keeps repeating upon me -
+                    Woo, the same old story keeps -
+                    Repeating upon me -
+                    And it was my day off -
+                    And it was my day off -
+                    I've been working all the time -
+                    I've been working all the time -
+                    Been working all the time -
+                    I've been working all the -
+                    I gotta get this paper -
+                    Make it sooner or later -
+                    You better keep me poor and busy -
+                    Or I'll be a danger -
+                    The truth is I'm a threat -
+                    And it's got you upset-t-t-t -
+                    Keep me in debt -
+                    Until the day I'm dead -
+                    It keeps repeating upon me -
+                    Woo, the same old story keeps -
+                    Repeating upon me, me, me, me -
+                    It keeps repeating upon me -
+                    Woo, the same old story keeps -
+                    Repeating upon me -
+                    And it was my day off -
+                    And it was my day off -
+                    I've been working all the time -
+                    I've been working all the time -
+                    Been working all the time -
+                    I've been working all the -
+                    Ave maria morena -
+                    Ave maria morena -
+                    Que bueno, que bueno a-e  -
+                    Ave maria morena</p>
+            </section>
+            
+            <script>
+                const text = document.querySelector('.text');
+                text.innerHTML = text.textContent.replace(/\S/g,
+                "<span>$&</span>");
+        
+            const letters = document.querySelectorAll('span'); 
+            for (let i=0; i<letters.length; i++){
+                    letters[i].addEventListener("mouseover", function
+                    (){
+                        letters[i].classList.add('active')
+                    })
+                }
+            
+            </script>
+
+
+
+
+</body>

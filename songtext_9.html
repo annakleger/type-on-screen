@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+    <html lang="de">
+<head>  
+<meta charset=“UTF-8“> 
+<meta name="viewport" 
+content="width=device-width, 
+initial-scale=1">
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="style/styles.css">
+<script src="js/js.js" async></script>
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="styles/styles-songtext-1.css">
+<title>Seitentitel</title>
+</head>
+
+<body>
+
+<div class="background">
+    <img src="img/9_back.png" width="100%", height="100%">
+</div>
+            <section>
+                <p class="text">Mulata tu caminas -
+                    Sola solita no acompaña -
+                    Dios te bendiga y favorezca -
+                    Tu eres la unica mama -
+                    Mira la negrita -
+                    Como baila el bembe -
+                    La mandan las brujitas -
+                    De Guayama y Cayey -
+                    Es la mas mala -
+                    Que nació en el batey -
+                    Y manda en la ley -
+                    Don't you put me in red -
+                    I hate it -
+                    Don't you put me in red -
+                    You don't know how much I hate it -
+                    Ask me where I'm going -
+                    Don't ask me where I'm from -
+                    I speak in three languages -
+                    You barely speak in one -
+                    Kids you put in cages -
+                    Look like they could be my sons -
+                    You forget we were here -
+                    When the west was won -
+                    Been gone for a while -
+                    So you thought I was done -
+                    Been through hell and back -
+                    And I've only just begun -
+                    Dress me -
+                    Undress me -
+                    I'm so spicy -
+                    You don't like me -
+                    Don't you put me in red -
+                    I hate it -
+                    Don't you put me in red -
+                    You don't know how much I hate it -
+                    Don't you put me in red -
+                    Oh, that's the color -
+                    You think I've been looking for -
+                    You put me in red -
+                    Oh, that's the color -
+                    You think I'll spend my life with -
+                    Oh, oh -
+                    Don't, don't, don't, don't -
+                    Don't, don't, don't -
+                    Don't, no, don't, don't, don't  -
+                    I hate it, I hate it</p>
+            </section>
+            
+            <script>
+                const text = document.querySelector('.text');
+                text.innerHTML = text.textContent.replace(/\S/g,
+                "<span>$&</span>");
+        
+            const letters = document.querySelectorAll('span'); 
+            for (let i=0; i<letters.length; i++){
+                    letters[i].addEventListener("mouseover", function
+                    (){
+                        letters[i].classList.add('active')
+                    })
+                }
+            
+            </script>
+
+
+
+
+</body>

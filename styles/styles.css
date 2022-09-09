@@ -1,0 +1,228 @@
+html, body {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 5px;
+    font-family: basic-sans, Arial, Helvetica, sans-serif;
+    font-weight: 350;
+    background-color: #ecede8;
+    font-size: 1vw;  
+ }
+
+ h1 {
+     font-size: 18vw;
+     font-weight: 400;
+     color: rgb(53, 46, 77);
+     /*overflow: hidden;*/
+     display: table-cell;
+     line-height: 7vw;
+     text-align: center;
+}
+
+p{
+  color: rgb(53, 46, 77);
+  text-align: top;
+  font-weight: 400;
+}
+
+.info {
+  color: #d4762d;
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+ }
+
+.text {
+  padding-left: 10px;
+  hyphens: auto;
+}
+
+
+
+
+
+
+.x {
+  text-indent: -0.5vw;
+}
+
+.n {
+  text-indent: -1.5vw;
+}
+
+.u {
+  text-indent: -1.2vw;
+}
+
+.e {
+  text-indent: -2vw;
+}
+
+.b {
+  text-indent: -1.2vw;
+  line-height: 9vw;
+}
+
+.i {
+  text-indent: 2vw;
+}
+
+.a {
+  text-indent: -1.5vw;
+}
+
+.r {
+  text-indent: 3vw;
+}
+
+
+
+.flex-container {
+    /*padding-right: 50px;*/
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row;
+    margin-left: 10px;
+    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;*/
+}
+
+.flex-item {
+    color: rgb(0, 0, 0);
+    position: relative;
+    /*font-size: 1vw;*/
+    flex: 1;
+    height: auto;
+    overflow: hidden;
+    text-align: left;
+}
+
+.flex-item::before {
+    content:'';
+    float:left;
+    padding-top:100%;
+    vertical-align: top
+
+}
+
+.image {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    background-color: none;
+  }
+  
+
+  /* Style the front side (fallback if image is missing) */
+  /*.flip-card-front 
+    background-color: #bbb;
+    color: black;*/
+  
+  
+  /* Style the back side */
+  .flip-card-back {
+    /*background-color: dodgerblue;*/
+    transform: rotateY(180deg);
+  }
+
+  /*FLIP AN X ACHSE*/
+
+  .flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+
+
+  .flip-card:hover .flip-card-inner2 {
+    transform: rotateX(180deg);
+  }
+  
+  
+ 
+  
+  ul {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  ul li {
+    list-style: none;
+    vertical-align: center;
+  }
+  
+  ul li a {
+    width: 100px;
+    height: 100px;
+    background-color: #eaece7;
+    text-align: center;
+    line-height: 2vw;
+    font-size: 3vw;
+    position: relative;
+    overflow: hidden;
+    border: 0px solid #eaece7;
+    z-index: 1;
+  }
+  
+  ul li a .icon {
+    position: relative;
+    vertical-align: center;
+    color: #2c2954;
+    transition: .5s;
+    z-index: 3;
+    margin: 50px;
+  }
+  
+  ul li a:hover .icon {
+    color: #d37230;
+    transform: rotateY(360deg);
+  }
+
+
+
+  .nav {
+    color: #d37230;
+  }

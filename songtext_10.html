@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+    <html lang="de">
+<head>  
+<meta charset=“UTF-8“> 
+<meta name="viewport" 
+content="width=device-width, 
+initial-scale=1">
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="style/styles.css">
+<script src="js/js.js" async></script>
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="styles/styles-songtext-1.css">
+<title>Seitentitel</title>
+</head>
+
+<body>
+
+<div class="background">
+    <img src="img/10_back.png" width="100%", height="100%">
+</div>
+            <section>
+                <p class="text">Let's start at the end -
+                    You're telling me you'll always be my friend -
+                    You're leaving for good -
+                    Made a mess and stayed longer than you ever should -
+                    You ask me what's wrong -
+                    Been playing this game we started far too long -
+                    I wish you all the best -
+                    Never wanna hear your voice or see you again -
+                    Now we're happily never after -
+                    Now we're happily never after -
+                    And I don't know what you were after -
+                    Now we're happy -
+                    Long walks in the park -
+                    All the secrets we whispered after dark -
+                    Yellow flowers you gave -
+                    Songs you wrote me, but you never got to sing -
+                    All the love we never made -
+                    We were growing to close, so you ran away -
+                    I'm not the one who broke your heart -
+                    Never should've fell in love, I knew it from the start -
+                    Now we're happily never after -
+                    Now we're happily never after -
+                    And I don't know what you were after -
+                    Now we're happy -
+                    Now we're happy -
+                    Never wanna hear your voice or see you again -
+                    Now we're happily never after -
+                    Now we're happily never after -
+                    And I don't know what you were after -
+                    Now we're happily never after -
+                    Now we're happily never after -
+                    And I don't know what you were after -
+                    Now we're happily never after -
+                    Now we're happy</p>
+            </section>
+            
+            <script>
+                const text = document.querySelector('.text');
+                text.innerHTML = text.textContent.replace(/\S/g,
+                "<span>$&</span>");
+        
+            const letters = document.querySelectorAll('span'); 
+            for (let i=0; i<letters.length; i++){
+                    letters[i].addEventListener("mouseover", function
+                    (){
+                        letters[i].classList.add('active')
+                    })
+                }
+            
+            </script>
+
+
+
+
+</body>

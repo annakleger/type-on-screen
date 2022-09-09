@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+    <html lang="de">
+<head>  
+<meta charset=“UTF-8“> 
+<meta name="viewport" 
+content="width=device-width, 
+initial-scale=1">
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="style/styles.css">
+<script src="js/js.js" async></script>
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="styles/styles-songtext-1.css">
+<title>Seitentitel</title>
+</head>
+
+<body>
+
+<div class="background">
+    <img src="img/3_back.png" width="100%", height="100%">
+</div>
+            <section>
+                <p class="text">You better believe in love -
+                    I wanna believe in love -
+                    Can you believe in love? -
+                    Better believe in love -
+                    Better believe in -
+                    Ay hombre -
+                    Maldita sea el día en que te conocí -
+                    Nunca me imaginé el castigo de tu amor -
+                    Y cuanto te gusta verme sufrir -
+                    Ay vida -
+                    Ay vida no seas tan injusta conmigo -
+                    Si este dolor es mi condena -
+                    Prefiero morir -
+                    Ay hombre -
+                    En mi vida no he querido a nadie más -
+                    Que quise a ti -
+                    Ay hombre -
+                    No pudiste darme la única cosa que pedí -
+                    Fue tu querer, fue tu querer -
+                    Ay hombre -
+                    Llegara el día en que te vas a arrepentir -
+                    Nunca te atrevas a buscarme otra vez -
+                    Yo viviré mi vida bien sin ti -
+                    Ay hombre -
+                    En mi vida no he querido a nadie más -
+                    Que quise a ti -
+                    Ay hombre -
+                    No pudiste darme la única cosa que pedí -
+                    Fue tu querer, fue tu querer</p>
+            </section>
+            
+            <script>
+                const text = document.querySelector('.text');
+                text.innerHTML = text.textContent.replace(/\S/g,
+                "<span>$&</span>");
+        
+            const letters = document.querySelectorAll('span'); 
+            for (let i=0; i<letters.length; i++){
+                    letters[i].addEventListener("mouseover", function
+                    (){
+                        letters[i].classList.add('active')
+                    })
+                }
+            
+            </script>
+
+
+
+
+</body>

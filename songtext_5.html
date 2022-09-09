@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+    <html lang="de">
+<head>  
+<meta charset=“UTF-8“> 
+<meta name="viewport" 
+content="width=device-width, 
+initial-scale=1">
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="style/styles.css">
+<script src="js/js.js" async></script>
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="styles/styles-songtext-1.css">
+<title>Seitentitel</title>
+</head>
+
+<body>
+
+<div class="background">
+    <img src="img/5_back.png" width="100%", height="100%">
+</div>
+            <section>
+                <p class="text">Try not to hear you Nancy, but you're killing me -
+                    Try not to hear you Nancy, but you're killing me -
+                    Everyday, everyday -
+                    Always the same, always -
+                    Wake up with pain in shoulders -
+                    I try to hear myself but you're screaming too loud -
+                    I try to hear myself but she's screaming too loud -
+                    I'm carrying weight for the both of us -
+                    Time to let go -
+                    I'm carrying weight for the both of us -
+                    Time to let it go -
+                    Cuanto quisiera salir de esto ya -
+                    Si sigo este rumbo -
+                    Pronto me sorprende la muerte -
+                    Dimelo bien, que piensa usted? -
+                    Que vivo otra noche -
+                    O me llamara la muerte? -
+                    Sacude, sacude y Dios que me ayude -
+                    Sacude, sacude y Dios que me ayude -
+                    Sacude, sacude y Dios que me ayude -
+                    Sacude, sacude y Dios que me ayude -
+                    Mi pobre abuelita -
+                    Prendio seis velitas -
+                    En la iglesia el cura -
+                    Reso cuatro misas -
+                    El medico blanco -
+                    Me dio diez pastillas -
+                    El indio brujito -
+                    Me despojo hasta las rodillas -
+                    Sacude, sacude y Dios que me ayude -
+                    Sacude, sacude y Dios que me ayude -
+                    Sacude, sacude y Dios que me ayude -
+                    Sacude, sacude y Dios que me ayude -
+                    Sacude, sacude y Dios que me ayude -
+                    Sacude, sacude y Dios que me ayude -
+                    Trate de levantarme y no pude -
+                    Sacude, sacude y Dios que me ayude -
+                    Estas son las noches largas de Octubre -
+                    Sacude, sacude y Dios que me ayude -
+                    Sacúdeme, sacúdeme y Dios que me ayude -
+                    Sacude, sacude y Dios que me ayude -
+                    El Diablo está detrás de la puerta -
+                    Sacude, sacude y Dios que me ayude -
+                    Entró sin que me diera cuenta -
+                    Sacude, sacude y Dios que me ayude -
+                    Quítalo de mi presencia -
+                    Sacude, sacude y Dios que me ayude -
+                    Sacudeme, sacudeme, sacudeme -
+                    Paloma, dame la mano -
+                    Que quiero subir -
+                    Subir hasta el cielo -
+                    Paloma, dame la mano -
+                    Que quiero subir -
+                    Subir hasta el cielo</p>
+            </section>
+            
+            <script>
+                const text = document.querySelector('.text');
+                text.innerHTML = text.textContent.replace(/\S/g,
+                "<span>$&</span>");
+        
+            const letters = document.querySelectorAll('span'); 
+            for (let i=0; i<letters.length; i++){
+                    letters[i].addEventListener("mouseover", function
+                    (){
+                        letters[i].classList.add('active')
+                    })
+                }
+            
+            </script>
+
+
+
+
+</body>

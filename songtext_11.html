@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+    <html lang="de">
+<head>  
+<meta charset=“UTF-8“> 
+<meta name="viewport" 
+content="width=device-width, 
+initial-scale=1">
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="style/styles.css">
+<script src="js/js.js" async></script>
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="styles/styles-songtext-1.css">
+<title>Seitentitel</title>
+</head>
+
+<body>
+
+<div class="background">
+    <img src="img/11_back.png" width="100%", height="100%">
+</div>
+            <section>
+                <p class="text"> never thought I'd have to write this song -
+                    Just yesterday I woke up and heard the news -
+                    I still can't believe you're gone -
+                    It doesn't make any sense to any of us -
+                    I didn't even get to say goodbye -
+                    I did my best for you -
+                    My very best for you -
+                    There was that time in September -
+                    I lost my temper and thought I would leave -
+                    I remember I was a real bitch that day and I regret it -
+                    I'm so sorry, I'm so sorry, babe -
+                    I did my best for you -
+                    My very best for you -
+                    Oh God, look down -
+                    Oh God, look down upon me now -
+                    Oh, oh God -
+                    Oh God look down upon me now -
+                    I don't forgive myself for all the things I never did -
+                    Can you forgive me for all the things -
+                    I didn't know just how to do? -
+                    I did my best for you -
+                    My very best for you -
+                    For me and you -
+                    For me and you -
+                    For me and you -
+                    For me and you</p>
+            </section>
+            
+            <script>
+                const text = document.querySelector('.text');
+                text.innerHTML = text.textContent.replace(/\S/g,
+                "<span>$&</span>");
+        
+            const letters = document.querySelectorAll('span'); 
+            for (let i=0; i<letters.length; i++){
+                    letters[i].addEventListener("mouseover", function
+                    (){
+                        letters[i].classList.add('active')
+                    })
+                }
+            
+            </script>
+
+
+
+
+</body>

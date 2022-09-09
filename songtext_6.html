@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+    <html lang="de">
+<head>  
+<meta charset=“UTF-8“> 
+<meta name="viewport" 
+content="width=device-width, 
+initial-scale=1">
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="style/styles.css">
+<script src="js/js.js" async></script>
+<link rel="stylesheet" href="https://use.typekit.net/dnl0aot.css">
+<link rel="stylesheet" href="styles/styles-songtext-1.css">
+<title>Seitentitel</title>
+</head>
+
+<body>
+
+<div class="background">
+    <img src="img/6_back.png" width="100%", height="100%">
+</div>
+            <section>
+                <p class="text">Bishy bish bish -
+                    Whatchu talkin about -
+                    With all the lies you be tellin -
+                    Keep my name out ur mouth -
+                    You keep my name out ur mouth -
+                    You keep my name out ur mouth -
+                    If we dont get it now -
+                    Gonna shut it down -
+                    Me and my girls -
+                    In the streets so loud -
+                    Cause we're done with your ass -
+                    You shoulda known by now -
+                    You shoulda known by now -
+                    You shoulda known by now -
+                    If we dont get it now -
+                    Gonna shut it down -
+                    En mi pecho bravo -
+                    Pena que me hiere -
+                    Hija de pueblo esclavo -
+                    Vive calla y muere -
+                    Who shot the sheriff? -
+                    When they killed breonna -
+                    In her sleep -
+                    And they're still out free -
+                    GET IT -
+                    Richy rich rich boy -
+                    What you found? -
+                    Drawin lines all around you -
+                    On your stolen ground -
+                    You know it's stolen ground -
+                    You know it's stolen ground -
+                    If we don't get it now -
+                    Gonna shut it down -
+                    Icey ice ice -
+                    Now you're kickin us out -
+                    Remember you were sitting down -
+                    While we built this town -
+                    You know we built this town -
+                    You know we built this town -
+                    If we don't it now -
+                    Gonna shut it down -
+                    Soy de todas partes -
+                    Y a todas partes voy -
+                    Arte soy entre las artes -
+                    En montes, monte soy -
+                    Who shot the sheriff? -
+                    Babies locked in cages -
+                    Dare to dream -
+                    And they're still not free -
+                    GET IT -
+                    Alguien preguntará más tarde -
+                    Que hiciste? -
+                    Hacha y machete -
+                    O dormiste? -
+                    GET IT</p>
+            </section>
+            
+            <script>
+                const text = document.querySelector('.text');
+                text.innerHTML = text.textContent.replace(/\S/g,
+                "<span>$&</span>");
+        
+            const letters = document.querySelectorAll('span'); 
+            for (let i=0; i<letters.length; i++){
+                    letters[i].addEventListener("mouseover", function
+                    (){
+                        letters[i].classList.add('active')
+                    })
+                }
+            
+            </script>
+
+
+
+
+</body>
